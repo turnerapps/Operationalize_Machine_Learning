@@ -21,10 +21,11 @@ jobs:
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
+      - run: sudo apt install pylint -y
+
       - run:
           name: install dependencies
           command: |
-            sudo apt install -y pylint
             python3 -m venv venv
             . venv/bin/activate
             make install
