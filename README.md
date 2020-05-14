@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+[![turnerapps](https://circleci.com/gh/turnerapps/Operationalize_Machine_Learning.svg?style=svg)](https://circleci.com/gh/turnerapps/Operationalize_Machine_Learning)
 
 ## Project Overview
 
