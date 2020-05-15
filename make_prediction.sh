@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 
 PORT=8000
+URL=$(minikube service prediction --url)
 echo "Port: $PORT"
+echo "Url: $URL"
 
 # POST method predict
 curl -d '{  
@@ -25,4 +27,4 @@ curl -d '{
    }
 }'\
      -H "Content-Type: application/json" \
-     -X POST http://localhost:$PORT/predict
+     -X POST $URL/predict

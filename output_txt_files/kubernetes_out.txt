@@ -1,1 +1,11 @@
-<paste log output from Kubernetes-mediated prediction, here>
+pod/prediction created
+NAME         READY   STATUS              RESTARTS   AGE
+prediction   0/1     ContainerCreating   0          0s
+service/prediction exposed
+|-----------|------------|-------------|-------------------------|
+| NAMESPACE |    NAME    | TARGET PORT |           URL           |
+|-----------|------------|-------------|-------------------------|
+| default   | prediction |          80 | http://172.17.0.4:30970 |
+|-----------|------------|-------------|-------------------------|
+🎉  Opening service default/prediction in default browser...
+👉  http://172.17.0.4:30970
