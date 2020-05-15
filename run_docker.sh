@@ -1,15 +1,8 @@
 #!/usr/bin/env bash
+# build new image, tag with commit and with latest.
+tag=$(git log -1 --format=%h)
+docker build -t prediction:$tag -t prediction:latest .
 
-## Complete the following steps to get Docker running locally
-
-# Step 1:
-# Build image and add a descriptive tag
-docker build -t prediction .
-
-# Step 2: 
-# List docker images
 docker images
 
-# Step 3: 
-# Run flask app
-docker run -it --rm --name prediction -p 8000:80 prediction
+docker run -it --rm --name prediction -p 8000:80 prediction:latest
