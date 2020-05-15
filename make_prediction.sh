@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-PORT=8000
+# PORT=8000
 URL=$(minikube service prediction --url)
-echo "Port: $PORT"
+# echo "Port: $PORT"
 echo "Url: $URL"
 
 # POST method predict

@@ -1,11 +1,12 @@
+Starting prediction docker container with Kubernetes.
 pod/prediction created
-NAME         READY   STATUS              RESTARTS   AGE
-prediction   0/1     ContainerCreating   0          0s
+Waiting 30 seconds for pod to spin up
+NAME         READY   STATUS    RESTARTS   AGE
+prediction   1/1     Running   0          30s
 service/prediction exposed
-|-----------|------------|-------------|-------------------------|
-| NAMESPACE |    NAME    | TARGET PORT |           URL           |
-|-----------|------------|-------------|-------------------------|
-| default   | prediction |          80 | http://172.17.0.4:30970 |
-|-----------|------------|-------------|-------------------------|
-🎉  Opening service default/prediction in default browser...
-👉  http://172.17.0.4:30970
+Url: http://172.17.0.5:32256
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
